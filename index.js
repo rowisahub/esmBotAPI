@@ -1,3 +1,4 @@
+require("dotenv").config();
 const os = require("os");
 const { Worker } = require("worker_threads");
 const path = require("path");

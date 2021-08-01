@@ -167,8 +167,8 @@ httpServer.on("error", (e) => {
   console.error("An HTTP error occurred: ", e);
 });
 
-httpServer.listen(8080, () => {
-  log("HTTP and WS listening on port 8080");
+httpServer.listen(process.env.PORT, () => {
+  log("HTTP and WS listening on port "+process.env.PORT);
 });
 
 const runJob = (job, sock) => {
